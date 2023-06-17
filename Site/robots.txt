@@ -1,1 +1,1 @@
-Sitemap: https://leomouraire.com/sitemap.xml
+Sitemap: https://pm-kirill.github.io/PM-SITE/Site/sitemap.xml
