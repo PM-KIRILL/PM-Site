@@ -1,0 +1,73 @@
+body {
+  overflow: hidden;
+  max-width: 100vw;
+  font-family: "Work Sans";
+  color: white;
+  background-color: black;
+  font-size: 15px;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-style: oblique;
+
+  &::selection {
+    background-color: white;
+    color: black;
+  }
+
+  &.page-leave {
+  }
+}
+
+a {
+  color: white;
+  text-decoration: none;
+
+  &:hover {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+input {
+  border: none;
+}
+
+span::selection, div::selection, a::selection, p::selection, h1::selection, h2::selection, h3::selection h4::selection {
+  background-color: white;
+  color: black;
+}
+
+
+
+
+//style de base avant animations window.page-ready
+
+.move-up-container {
+  overflow: hidden;
+}
+.move-up {
+  transform: translateY(100%);
+}
+.move-up-slow {
+  transform: translateY(100%);
+}
+.appear {
+  opacity: 0;
+}
+.appear-s {
+  opacity: 0;
+}
+
+
+
+
+// RESPONSIVE
+
+@media screen and (max-width: 1200px) {
+
+
+
+}
+
+
+//
