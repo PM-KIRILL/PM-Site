@@ -1,0 +1,36 @@
+<form action="submit_comment.php" method="post">
+    <label for="name">Имя:</label>
+    <input type="text" name="name" id="name">
+    <br>
+    <label for="email">Эл. почта:</label>
+    <input type="email" name="email" id="email">
+    <br>
+    <label for="comment">Комментарий:</label>
+    <textarea name="comment" id="comment"></textarea>
+    <br>
+    <input type="submit" value="Отправить">
+</form>
+
+<?php
+// Открываем файл с комментариями для чтения
+$fp = fopen('comments.txt', 'r');
+
+// Читаем комментарии из файла и выводим их на страницу
+while ($line = fgets($fp)) {
+    $comment_data = explode('||', $line);
+    $name = $comment_data[0];
+    $email = $comment_data[1];
+    $comment = $comment_data[2];
+    $timestamp = $comment_data[3];
+
+    // Оформляем комментарий
+    echo "<div class=\"comment\">";
+    echo "<div class=\"comment-info\">";
+    echo "<span class=\"comment-name\">$name</span>";
+    echo "<span class=\"comment-time\">" . date('F j, Y g:i a', $timestamp) . "</span>";
+    echo "</div>";
+    echo "<div class=\"comment-text\">$comment</div>";
+    echo "</div>";
+}
+
+// Закрываем
