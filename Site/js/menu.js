@@ -85,7 +85,7 @@ $(".menu-item-container").click(function(){
 
   $("body").toggleClass("page-leave");
       setTimeout(function(){
-      location.href = "https://pm-kirill.github.io/PM-SITE/Site" + nameLinkMenu + "/index.html";
+      location.href = "https://pm-kirill.github.io/PM-SITE/Site/" + nameLinkMenu + "/index.html";
    }, 3000);
 
 })
