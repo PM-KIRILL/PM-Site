@@ -53,7 +53,7 @@ $(".bloc-contact").click(function(){
 
   $("body").toggleClass("page-leave");
   setTimeout(function(){
-     location.href = "https://pm-kirill.github.io/PM-SITE/Site" + nameLink + "/index.html";
+     location.href = "https://pm-kirill.github.io/PM-SITE/Site/" + nameLink + "/index.html";
    }, 1000);
 
    TweenMax.to("body", .5, {backgroundColor: "black"});
