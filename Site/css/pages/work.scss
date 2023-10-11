@@ -1,0 +1,190 @@
+.page-work {
+  overflow-y: auto;
+
+  .bloc-titre {
+    width: 100vw;
+    height: 70vh;
+
+    .move-up-container {
+      position: fixed;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      transform: translateY(-50%);
+
+      &.titre-clone {
+        opacity: 0;
+      }
+    }
+    .elt-titre {
+      font-size: 50px;
+      font-weight: 600;
+      @media screen and (max-width: 500px) {
+        font-size: 40px;
+      }
+      @media screen and (max-width: 400px) {
+        font-size: 30px;
+      }
+    }
+  }
+
+  .bloc-work {
+    align-items: center;
+    justify-content: center;
+
+    .col-work {
+      margin-top: 80px;
+      .elt-work {
+        position: relative;
+        margin: 80px auto;
+        width: 500px;
+        height: 280px;
+        background-color: black;
+        background-position: center;
+        background-size: cover;
+
+
+        &.superherocheesecake {
+          background-image: url(../images/shcc-preview.jpg);
+        }
+        &.fanettebullat {
+          background-image: url(../images/fanette-preview.jpg);
+        }
+        &.nike {
+          background-image: url(../images/nike3d.jpg);
+        }
+        &.klein {
+          background-image: url(../images/projet1-klein.jpg);
+        }
+        &.words-cascade {
+          background-image: url(../images/github-logo.jpg);
+        }
+        &.word-reveal {
+          background-image: url(../images/github-logo.jpg);
+        }
+        &.monologue-otis {
+          background-image: url(../images/github-logo.jpg);
+        }
+        &.henri-mouraire {
+          background-image: url(../images/henri-mouraire.jpg);
+        }
+
+        .title-work {
+          white-space: nowrap;
+          position: absolute;
+          top: 30%;
+          right: 0;
+          transform: translate(0%, -50%);
+          opacity: 0;
+
+          .tags-title {
+            text-transform: none;
+            font-weight: 600;
+            font-size: 60px;
+            @media screen and (max-width: 1200px) {
+              font-size: 50px;
+            }
+            @media screen and (max-width: 992px) {
+              font-size: 40px;
+            }
+            @media screen and (max-width: 600px) {
+              font-size: 25px;
+            }
+          }
+          .tags {
+            text-align: right;
+            line-height: 10px;
+            font-size: 14px;
+            font-weight: 300;
+            @media screen and (max-width: 1200px) {
+              font-size: 13px;
+              line-height: 9px;
+            }
+            @media screen and (max-width: 992px) {
+              font-size: 10px;
+              line-height: 7px;
+            }
+            @media screen and (max-width: 600px) {
+              font-size: 8px;
+              line-height: 4px;
+            }
+          }
+          @media screen and (max-width: 1200px) {
+            width: 95%;
+            top: 35%;
+            // left: 10px;
+            transform: translate(0, -100%);
+            .tags {
+              text-align: left;
+            }
+          }
+        }
+
+        .moving-title-work {
+          opacity: 0;
+          white-space: nowrap;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+        }
+        @media screen and (max-width: 992px) {
+          margin: 70px auto;
+          width: 400px;
+          height: 220px;
+        }
+        @media screen and (max-width: 768px) {
+          margin: 50px auto;
+          width: 350px;
+          height: 200px;
+        }
+        @media screen and (max-width: 600px) {
+          margin: 40px auto;
+          width: 250px;
+          height: 140px;
+        }
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+    }
+  }
+
+
+  .anim-project {
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    .moving-title-project {
+      white-space: nowrap;
+      text-transform: uppercase;
+      font-size: 120px;
+      font-weight: 600;
+      text-align: center;
+      line-height: 120px;
+      opacity: 0;
+
+      @media screen and (max-width: 768px) {
+        font-size: 80px;
+      }
+      @media screen and (max-width: 650px) {
+        font-size: 50px;
+      }
+      @media screen and (max-width: 550px) {
+        font-size: 30px;
+      }
+    }
+
+  }
+
+
+
+
+
+
+
+}
