@@ -1,0 +1,40 @@
+#loading {
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-size: 150px;
+
+  .elt-loader1, .elt-loader2 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 600;
+    padding: 10px;
+  }
+
+  .elt-loader1 {
+    color: black;
+    -webkit-text-stroke: 1px white;
+  }
+  .elt-loader2 {
+    color: white;
+    text-stroke: 1px white;
+    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+    animation: clipAnim 5s forwards ease-out;
+  }
+
+
+}
+
+@keyframes clipAnim {
+  0% {
+    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+  }
+  100% {
+    clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
+  }
+}

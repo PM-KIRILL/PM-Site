@@ -1,0 +1,34 @@
+.bloc-contact {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 100px;
+  text-transform: none;
+
+  .name {
+    text-transform: capitalize;
+    position: absolute;
+
+    &.black {
+      color: black;
+    }
+    &.white {
+      color: white;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 80px;
+  }
+  @media screen and (max-width: 600px) {
+    font-size: 60px;
+  }
+
+}

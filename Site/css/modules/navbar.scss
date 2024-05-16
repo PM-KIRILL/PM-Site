@@ -1,0 +1,85 @@
+.navbar {
+  width: 100vw;
+  background: none;
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 0;
+  padding: 40px 50px;
+
+  .brand, .menu {
+    text-align: left;
+    width: 50%;
+    span {
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  .menu {
+    & .btn-menu {
+      display: inline-block;
+      transition: ease-in-out .5s all;
+      position: relative;
+      left: 0;
+      transform: translateX(-50%);
+      &:before {
+        transition: ease-in-out .5s all;
+        background-color: white;
+        content: "";
+        width: 1px;
+        height: 20px;
+        position: absolute;
+        left: 50%;
+        top: -120%;
+      }
+      &:after {
+        transition: ease-in-out .5s all;
+        background-color: white;
+        content: "";
+        width: 1px;
+        height: 20px;
+        position: absolute;
+        left: 50%;
+        top: -170%;
+        opacity: 0;
+      }
+    }
+
+    &.close-menu {
+      transition: ease-in-out .5s all;
+      span {
+        color: rgba(255,255,255,0);
+        &:before {
+          transition: ease-in-out .3s all;
+          height: 45px;
+          top: -100%;
+          transform: rotateZ(45deg);
+        }
+        &:after {
+          transition: ease-in-out .3s all;
+          height: 45px;
+          opacity: 1;
+          top: -100%;
+          transform: rotateZ(-45deg);
+        }
+        &:hover {
+          &:before, &:after {
+            background-color: rgba(255,255,255,.3);
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+// RESPONSIVE
+
+@media screen and (max-width: 768px){
+  .navbar {
+    padding: 40px 10px;
+  }
+}

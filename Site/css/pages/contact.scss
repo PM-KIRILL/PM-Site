@@ -1,0 +1,204 @@
+.page-contact {
+  overflow-y: auto;
+
+  .container-message {
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+
+    .elt-message {
+      text-align: center;
+      font-size: 40px;
+      font-weight: 400;
+
+      a {
+        font-weight: 200;
+      }
+    }
+
+  }
+
+  .big-container-choices {
+
+    .container-choices-form {
+      // overflow:hidden;
+      height: 100vh;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+
+      #send-nudes {
+        .elt-choice {
+          div {
+            &:hover {
+              // color: #D93BFF;
+            }
+
+          }
+        }
+
+      }
+
+      .container-choice {
+        text-align: center;
+
+
+        .elt-choice {
+          min-width: 100vw;
+          div {
+            white-space: nowrap;
+            line-height: 140px;
+            color: rgba(255,255,255,.5);
+            background: none;
+            font-size: 140px;
+            font-style: oblique;
+            font-weight: 600;
+
+            &:hover {
+              color: white;
+              cursor: pointer;
+            }
+
+            @media screen and (max-width: 1200px) {
+              font-size: 100px;
+              line-height: 100px;
+            }
+            @media screen and (max-width: 992px) {
+              font-size: 90px;
+              line-height: 90px;
+            }
+            @media screen and (max-width: 768px) {
+              font-size: 60px;
+              line-height: 60px;
+            }
+            @media screen and (max-width: 500px) {
+              font-size: 40px;
+              line-height: 40px;
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+  .container-form {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    margin: 150px auto;
+    justify-content: center;
+
+    form {
+      width: 100%;
+      .container-input {
+        width: 90%;
+        margin: 20px auto;
+        .elt-input {
+          width: 100%;
+          input {
+            font-style: oblique;
+            font-weight: 200;
+            font-size: 40px;
+            width: 100%;
+            color: rgba(255,255,255,.5);
+            background: none;
+            border-bottom: 1.5px rgba(255,255,255,.5) solid;
+            &#submit {
+              padding: 5px 15px;
+              font-weight: 400;
+              font-size: 30px;
+              color: white;
+              width: 20%;
+              border: 1.5px rgba(255,255,255,.5) solid;
+              border-radius: 2px;
+              &:focus {
+                border: 1.5px rgba(255,255,255,1) solid;
+              }
+              &:hover {
+                cursor: pointer;
+              }
+            }
+            &:focus {
+              color: rgba(255,255,255,1);
+              outline: none;
+              border-bottom: 1.5px rgba(255,255,255,1) solid;
+            }
+          }
+          textarea {
+            font-style: oblique;
+            font-weight: 200;
+            color: rgba(255,255,255,.5);
+            font-size: 40px;
+            border-left: none;
+            border-right: none;
+            border-top: none;
+            width: 100%;
+            background: none;
+            border-bottom: 1.5px rgba(255,255,255,.5) solid;
+            &:focus {
+              outline: none;
+              color: rgba(255,255,255,1);
+              border-bottom: 1.5px rgba(255,255,255,1) solid;
+            }
+          }
+          input::selection, textarea::selection {
+            background-color: white;
+            color: black;
+          }
+        }
+        .elt-label {
+          label {
+            font-size: 40px;
+            text-transform: none;
+            font-weight: 400;
+          }
+          .unlock {
+            height: 22%;
+            width: auto;
+            position: absolute;
+            right: 20px;
+            bottom: 15px;
+            opacity: 0;
+            &:hover {
+              cursor: pointer;
+              opacity: 1;
+            }
+          }
+        }
+        @media screen and (max-width: 700px) {
+          .elt-input {
+            input, textarea {
+              font-size: 25px;
+              &#submit {
+                font-size: 25px;
+                width: 50%;
+              }
+            }
+          }
+          .elt-label {
+            label {
+              font-size: 25px;
+            }
+          }
+        }
+      }
+    }
+    .return-btn {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      padding: 50px;
+      font-size: 30px;
+      font-weight: 400;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+
+
+
+
+}
